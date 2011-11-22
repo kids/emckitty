@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Facebook on Cloudfoundry</title>
+    <link rel="stylesheet" href="/stylesheets/screen.css">
+
+    <!-- These are Open Graph tags.  They add meta data to your  -->
+    <!-- site that facebook uses when your content is shared     -->
+    <!-- over facebook.  You should fill these tags in with      -->
+    <!-- your data.  To learn more about Open Graph, visit       -->
+    <!-- 'https://developers.facebook.com/docs/opengraph/'       -->
+    <meta property="og:title" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="fb:app_id" content="" />
+    <script>
+      function popup(pageURL, title,w,h) {
+        var left = (screen.width/2)-(w/2);
+        var top = (screen.height/2)-(h/2);
+        var targetWin = window.open(
+          pageURL,
+          title,
+          'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left
+          );
+      }
+    </script>
+    <!--[if IE]>
+      <script>
+        var tags = ['header', 'section'];
+        while(tags.length)
+          document.createElement(tags.pop());
+      </script>
+    <![endif]-->
+  </head>
+  
+    <body id="home" class="home">
+    <header role="banner">
+	<nav>
+	 </p>
+      <ul class="container">
+        <li>Powered by<a href="http://vmware.com" id="vmware" rel="external">VMware</a></li>
+      </ul>
+    </nav>
+	
+	<hgroup>
+	  <h1>Cloud Foundry</h1>
+      <h2> Welcome to the Facebook App on CloudFoundry Template Generator </h2>
+	</hgroup>
+    </header>
+		
+    <section id="links"  class="container line">
+		
+		<div class="unit size1of3">
+		  <h2>Paste info of your new app on facebook below:</h2>
+	      <form action="/getty" method="POST">
+		  <dl>Your app Name<input id="ffna" name="ffna" type="text" size="30" /></dl>
+		  <dl>Your app ID<input id="ffid" name="ffid" type="text" size="30" /></dl>
+		  <dl>Your app Secret<input id="ffse" name="ffse" type="text" /></dl>
+		  <ol> </ol>
+		   <li class="buttons"><input type="submit"  class="button" value="Get Your FB page" /></li>
+		   </form>
+	     </div>    
+
+			
+		<div class="unit size2of3" last>
+		<h2>Follow the instructions to build your app:</h2>
+		   <ol>1. If you don't have a Cloudfoundry account create at <a href=http://www.cloudfoundry.com/>cloudfoundry.com</a></ol>
+		   <ol>>>1.a.  Create a stub application on Cloudfoundry, record the application FQDN</ol>
+           <ol>2. Create a new app on <a href=https://developers.facebook.com/>facebook</a></ol>
+		   <ol>>>2a. Click on the Facebook "new app" button</ol>
+		   <ol>>>2b. Enter the name of the Cloudfoundry application created in Step 1 in the domain name (no'http://') </ol>
+		   <ol>>>2c. Enter the Cloudfoundry application FQDN in the website field </ol>
+           <ol>>>2d. Create the app</ol>
+		   <ol>3. Enter the Facebook App ID and App Secret in this form</ol>
+		   <ol>4. Submit form and download zip file containing template application</ol>
+           <ol>5. Extract zip and publish to Cloudfoundry</ol>
+           <ol>>>5a. vmc update and bind to rabbitmq service</ol>
+           <ol>Congratulations, your app is now running!</ol>
+		</div>
+
+    </section>
+
+	
+  <section id="feed" class="hfeed container line">
+		<h2><a href=http://emckyoto.cloudfoundry.com/>See a template Demo</a></h2>
+  </section>
+
+  </body>
+</html>
