@@ -179,6 +179,11 @@ get '/new' do #go to welcome and get id&secret
   erb :welcome
 end
 
+get '/faq' do
+  erb :faq
+end  
+
+
 post '/getty' do #@welcome page
   @ffids = params[:ffid]
   @ffses = params[:ffse]  

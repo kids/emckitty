@@ -61,7 +61,7 @@
 		  <dl>Your app ID<input id="ffid" name="ffid" type="text" size="30" /></dl>
 		  <dl>Your app Secret<input id="ffse" name="ffse" type="text" /></dl>
 		  <ol> </ol>
-		   <li class="buttons"><input type="submit"  class="button" value="Get Your FB page" /></li>
+		   <li class="buttons"><input type="submit"  class="button" value="Get Yours" /></li>
 		   </form>
 	     </div>    
 
